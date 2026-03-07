@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#container{
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/AL.png) center/cover no-repeat;
+
+  /* permite posicionar o card */
+  position: relative;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.car {
+  background: #ffffff4a;
+  border-radius: 18px;
+  text-align: center;
+
+  /* responsivo */
+  width: min(470px, 92vw);
+  height: auto;
+  padding: 20px;
+
+  /* fica à direita e centralizado verticalmente em telas grandes */
+  position: absolute;
+  top: 52%;
+  right: 6%;
+  transform: translateY(-52%);
+
+  font-family: Arial, sans-serif;
+  color: #3a3737;
+  font-size: 15px;
+}
+
+.tempo {
+  font-size: clamp(15px, 5vw, 30px);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#conteudo {
+  display: none;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgb(129, 55, 124);
+  font-weight: bold;
+  background: #9445a4;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.btn.disabled {
+  background: #2f3f56;
+  color: #a4b9d6;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .car {
+    position: static;
+    transform: none;
+    margin: 0 auto;   /* centraliza */
+  }
+
+  #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+

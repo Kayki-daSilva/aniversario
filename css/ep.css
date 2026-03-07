@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(../img/home-ep.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#voltar {
+    font-family:"Gloria Hallelujah", cursive;
+    color: white;
+    font-size: 23px;
+    align-items: flex-end;
+    position: absolute;
+    top: 90%;
+    left: 91.1%;
+    transition: transform 0.5s ease;   
+
+}
+
+#voltar:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: "Gloria Hallelujah", cursive;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-52%);
+}
+
+li{
+  margin: 20px;
+  font-size:  37px;
+  transition: transform 0.7s ease;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo geral para todos os links da lista */
+li a {
+  display: inline-block; /* Permite que o link tenha largura e altura */
+  padding-left: 200px;    /* Abre espaço na esquerda para a imagem aparecer */
+  background-repeat: no-repeat;
+  background-size: 200px; /* Ajusta o tamanho da imagem */
+  background-position: left center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right: 90px;
+}
+
+/* Imagens específicas para cada episódio */
+.e1 { background-image: url('../img/azul-jogar.png'); }
+.e2 { background-image: url('../img/verde-jogar.png'); }
+.e3 { background-image: url('../img/vermelho-jogar.png'); }
+.e4 { background-image: url('../img/roxo-jogar.png'); }
+.e5 { background-image: url('../img/laranja-jogar.png'); }
+
+
+.container {
+  width: 1000px;
+  height: 740px;
+  background-size: cover;
+   display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  top: 30%;
+  left: 40%;
+  transform: translateY(-52%);
+ transition: background-image 0.4s ease-in-out; /* Deixa a troca suave */
+
+}

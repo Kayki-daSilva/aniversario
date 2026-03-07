@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="ep3.css">
+    <link rel="stylesheet" href="../css/back.css">
+    <title>Memorias</title>
+</head>
+<body>
+    <a id="voltar" href="../episodios.html">Voltar</a>
+    <section>
+        <div class="title">
+            <h1>Agr são as memorias</h1>
+        </div>
+        <div class="gg">
+            <img src="../img/giphy.gif" alt="gif">
+        </div>
+        <div>
+            <h2 class="txt">
+                Momentos que eu achei perdidos na galeria
+            </h2>
+        </div>
+    </section>
+        <div class="container">
+            <div class="slide">
+                <video src="../img/v1.mp4" controls muted></video>
+                <video src="../img/v2.mp4" controls muted></video>
+                <video src="../img/v3.mp4" controls muted></video>
+                <video src="../img/v1.mp4" controls muted></video>
+                
+            </div>
+            <div class="navbtns">
+                <button onclick="prevbtn();">
+                <i class="uil uil-angle-left-b"></i>
+                </button>
+                <button onclick="nextbtn();">
+                <i class="uil uil-angle-right-b"></i>
+                </button>
+            </div>
+        </div>
+ 
+    </section>
+    <script>
+        const slide = document.querySelectorAll('video')
+        var counter = 0;
+
+        slide.forEach(
+            (slide,index) => {
+            slide.style.left = `${index * 100}%`
+        });
+        
+        function slideclip(){
+            slide.forEach(
+                slide => {slide.style.transform = `translateX(-${counter * 100}%)`
+        })
+        }
+
+        const nextbtn = () =>{
+            counter++
+            slideclip();
+            if(counter == 3) {
+                counter = 0
+            }
+        }
+
+        const prevbtn = () =>{
+            counter--
+            slideclip();
+              if(counter == -1) {
+                counter = 4
+            }
+        }
+    </script>
+</body>
+</html>

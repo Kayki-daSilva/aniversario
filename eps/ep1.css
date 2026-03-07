@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(../img/ep1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    width: 100%; /* Corrigido de 100vh para 100% */
+}
+
+.title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+
+.imgs {
+    width: 500px;
+    height: 500px;
+   position: absolute;
+   top: 17%;
+   margin: 15px;
+   border-radius: 15px;
+   box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.611);
+   background-image: url(../img/foto-ep1.png);
+   
+}
+
+#texto{
+  overflow: hidden;
+  display: inline;
+  animation: pisca-cursor 0.8s infinite;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+    position: absolute;
+    top: 16%;
+    left: 40%;
+    font-size: 28px;
+    width: 800px;
+    line-height: 1.5; /* Espaçamento entre linhas para não embolar */
+    word-break: break-word;/* Força a quebra de palavras se necessário */
+    white-space: pre-wrap; /* MÁGICA: Respeita espaços e quebras de linha do JS */
+}
+

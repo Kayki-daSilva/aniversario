@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(../img/epfinal.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    width: 100%; /* Corrigido de 100vh para 100% */
+}
+
+.title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.gg{
+    position: absolute;
+    top: 21%;
+    right: 40%;
+}
+
+
+.txt{
+  overflow: hidden;
+  display: inline;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+    position: absolute;
+    top: 86%;
+    left: 26%;
+    font-size: 40px;
+    width: 800px;
+    line-height: 1.5; 
+}
+
+/* Parte dos videos */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    background-image: url(../img/epfinal.png);
+}
+
+.slide{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.navbtns {
+    position: relative;
+}
+
+.navbtns button {
+    height: 70px;
+    width: 70px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    border:  2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 1em;
+}
+
+
+.navbtns button :active{
+    background-color: whitesmoke;
+    color: black;
+}
